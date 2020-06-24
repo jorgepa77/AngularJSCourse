@@ -6,8 +6,8 @@ angular.module('LunchCheck', [])
 
 LunchCheckController.$inject = ['$scope'];
 function LunchCheckController($scope) {
-  $scope.dishes = "a,b,c,d,e";
-  $scope.msg = "";   
+  $scope.dishes = "";
+  $scope.msg = "";
 
   $scope.checkIfTooMuch = function () {
     if ($scope.dishes.length === 0 ) {
